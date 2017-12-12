@@ -1,0 +1,106 @@
+.wrapper{
+    max-width: 800px;
+    background-color: white;
+    margin: auto;
+}
+
+body {
+    background-color: black;
+}
+
+.modal p, h1, h2, h3{
+    font-family: 'Ubuntu Mono', monospace;
+    color: black;
+    text-align: center;
+}
+
+.featured {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 30px;
+}
+
+.img-box {
+    width: 62.5%;
+    margin: auto;
+}
+
+.gallery {
+    max-width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.preview {
+    width: 200px;
+    height: 180px;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+footer p {
+    text-align: center;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 10000;
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    background-color: white;
+    z-index: 10001;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    display: none;
+}
+
+.show .overlay,
+.show .modal {
+    display: block;
+}
+
+@media only screen and (max-width: 795px){
+    
+    .gallery {
+        max-width: 100%;
+        margin: auto;
+    }
+    
+    .modal {
+        padding: 5px;
+        
+    }
+    
+    .modal img {
+        width: 400px;
+    }
+    
+    .x {
+        padding: 5px 10px;
+        font-size: 1.5em;
+        color: white;
+    }
+
+}
+
+@media only screen and (max-width: 415px){
+    
+    .modal img {
+        width: 300px;
+    }
+    
+}
